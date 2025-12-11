@@ -243,7 +243,7 @@ class GraphAPIClient:
             Response or None
         """
         data = {
-            "@odata.id": f"https://graph.microsoft.com/v1.0/directoryObjects/{user_id}"
+            "@odata.id": f"{self.base_url}/directoryObjects/{user_id}"
         }
         return self._make_request("POST", f"/groups/{group_id}/members/$ref", data=data)
     
