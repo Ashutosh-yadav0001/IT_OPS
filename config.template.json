@@ -1,0 +1,17 @@
+{
+  "azure": {
+    "tenant_id": "your-tenant-id-here",
+    "client_id": "your-client-id-here",
+    "client_secret": "your-client-secret-here",
+    "authority": "https://login.microsoftonline.com/your-tenant-id-here",
+    "scope": ["https://graph.microsoft.com/.default"]
+  },
+  "graph_api": {
+    "base_url": "https://graph.microsoft.com/v1.0",
+    "beta_url": "https://graph.microsoft.com/beta"
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}
